@@ -44,19 +44,44 @@ def get_stock(entry):
         diff1percent = diff1 / market
     
         if diff1percent >= 20:
-            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) + "\nCurrent Market Value: " + str(round(market, 2)) + "\nInteresting! " + str(entry) + " looks like a very strong buy.\nYou should definitely look into making an immediate purchase."
+            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) 
+            statement += "\nCurrent Market Value: " + str(round(market, 2)) 
+            statement += "\nInteresting! " + str(entry) 
+            statement += " looks like a very strong buy."
+            statement += "\nYou should definitely look into making an immediate purchase."
         if diff1percent >= 10:
-            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) + "\nCurrent Market Value: " + str(round(market, 2)) + "\nIntriguing. " + str(entry) + " could be a strong buy, you\nshould definitely consider making a purchase."
+            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) 
+            statement += "\nCurrent Market Value: " + str(round(market, 2)) 
+            statement += "\nIntriguing. " + str(entry) + " could be a strong buy,"
+            statement += " you\nshould definitely consider making a purchase."
         if diff1percent >= 5: 
-            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) + "\nCurrent Market Value: " + str(round(market, 2)) + "\n" + str(entry) + " is definitely trending upwards.\nKeep an eye on it and be on the\nlookout for potential buying opportunities."
+            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) 
+            statement += "\nCurrent Market Value: " + str(round(market, 2)) 
+            statement += "\n" + str(entry) + " is definitely trending upwards."
+            statement +="\nKeep an eye on it and be on the\nlookout for"
+            statemetn += " potential buying opportunities."
         if diff1percent > 0:
-            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) + "\nCurrent Market Value: " + str(round(market, 2)) + "\n" + str(entry) + " seems to be trending in the right direction, but it's too close to call right now.\nHold off on buying until more definitive data is available."
+            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2)) 
+            statement += "\nCurrent Market Value: " + str(round(market, 2)) 
+            statement += "\n" + str(entry) + " seems to be trending in the"
+            statement += " right direction, but it's too close to call right now."
+            statement += "\nHold off on buying until more definitive data is available."
         if diff1percent == 0:
-            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2))  + "\nCurrent Market Value: " + str(round(market, 2)) + "\n" + str(entry) + " is trading at approximately its intrinsic value. Hold off on making a purchase, as \nthere isn't much value to be found here."
+            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2))  
+            statement += "\nCurrent Market Value: " + str(round(market, 2)) 
+            statement += "\n" + str(entry) + " is trading at approximately"
+            statement += " its intrinsic value. Hold off on making a purchase,"
+            statement += " as \nthere isn't much value to be found here."
         if diff1percent < 0:
-            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2))  + "\nCurrent Market Value: " + str(round(market, 2)) + "\n" + str(entry) + " looks to be on the downswing. Don't establish\na position immediately, but keep an eye out\nfor potential buying opportunities in the future."
+            statement = "Estimated Intrinsic Value: " + str(round(ivalue1, 2))  
+            statement += "\nCurrent Market Value: " + str(round(market, 2)) 
+            statement += "\n" + str(entry) + " looks to be on the downswing."
+            statement += " Don't establish\na position immediately, but keep an"
+            statement += " eye out\nfor potential buying opportunities in the future."
         else:
-            statement = "There is not enough data at the moment to come\n to a conclusive valuation for " + str(entry) + ". Please check back\nlater when our database is updated."
+            statement = "There is not enough data at the moment to come\n to a"
+            statement += " conclusive valuation for " + str(entry) 
+            statement += ". Please check back\nlater when our database is updated."
     # an error will only occur if the given ticker does not exist, thus
     # this is the only error that must be handled
     except:
@@ -153,7 +178,7 @@ lower_frame.place(relx=0.5, rely=0.4, relwidth=0.75, relheight=0.55, anchor='n')
 label = tk.Label(lower_frame, fg="#16589B", text="Welcome to the BlueChip stock advisory system. \nEnter the ticker for the stock you'd like assessed,\nand an evaluation will appear in this box.")\
 
 # places the response label element in the lower_frame element with width equal to 100% of the 
-# lower_frame width and height equal to 100% of the lower_frame height
+# lower_frame width and height equal to 100% of the lower_frame
 label.place(relwidth=1, relheight=1)
 
 root.mainloop()
