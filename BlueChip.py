@@ -175,7 +175,8 @@ lower_frame.place(relx=0.5, rely=0.4, relwidth=0.75, relheight=0.55, anchor='n')
 
 # creates a label element that will be used to display the welcome message to users and 
 # to display the response to user inputs to the user
-label = tk.Label(lower_frame, fg="#16589B", text="Welcome to the BlueChip stock advisory system. \nEnter the ticker for the stock you'd like assessed,\nand an evaluation will appear in this box.")\
+label = tk.Label(lower_frame, fg="#16589B", text="Welcome to the BlueChip stock advisory system. \nEnter the ticker"
++ " for the stock you'd like assessed,\nand an evaluation will appear in this box.")
 
 # places the response label element in the lower_frame element with width equal to 100% of the 
 # lower_frame width and height equal to 100% of the lower_frame
