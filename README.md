@@ -11,6 +11,7 @@ With BlueChip, beginner traders won't have to wait weeks or months for an analys
 ## Screenshots
 <img width="377" alt="bluechip1" src="https://user-images.githubusercontent.com/55059833/103178415-a489a600-4850-11eb-85fa-505aec071efa.PNG">
 What users are greeted with when they first open BlueChip.
+
 <img width="376" alt="bluechip2" src="https://user-images.githubusercontent.com/55059833/103178435-c2570b00-4850-11eb-8b97-e7ca7cb56132.PNG">
 An example of an evaluation of AAPL stock.
 
