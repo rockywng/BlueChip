@@ -9,6 +9,8 @@ After looking into the methods used by many analysts, I realized that while they
 With BlueChip, beginner traders won't have to wait weeks or months for an analyst to provide an evaluation of a stock they are interested in. They can simply enter the ticker of the stock they're interested in into the system and receive a response immediately! I hope this tool helps anyone getting into trading for the first time, and I hope it makes the prospect of trading stocks much less frightening! 
 
 ## Screenshots
+<img width="377" alt="bluechip1" src="https://user-images.githubusercontent.com/55059833/103178415-a489a600-4850-11eb-85fa-505aec071efa.PNG">
+
 
 ## Packages and Tools Used
 BlueChip was built using the tkinter GUI toolkit, the Yahoo Finance API and the OS module. The tkinter toolkit was used to design the GUI, offering an easy, efficient way to produce a simplistic, visually appealing user interface. The Yahoo Finance API was used to fetch live stock data. When the user inputs a stock ticker, that ticker is used to fetch a table known as a quote table, containing all financial data pertaining to that stock. From this table, the price to earning ratio and earnings per share are retrieved for use in the intrinsic value calculation. The OS module is used to produce the path to an image file that is used as the background for the user interface. 
