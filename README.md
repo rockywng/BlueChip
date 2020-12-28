@@ -9,11 +9,11 @@ After looking into the methods used by many analysts, I realized that while they
 With BlueChip, beginner traders won't have to wait weeks or months for an analyst to provide an evaluation of a stock they are interested in. They can simply enter the ticker of the stock they're interested in into the system and receive a response immediately! I hope this tool helps anyone getting into trading for the first time, and I hope it makes the prospect of trading stocks much less frightening! 
 
 ## Screenshots
-What users are greeted with when they first open BlueChip.
+What users are greeted with when they first open BlueChip:
 
 <img width="377" alt="bluechip1" src="https://user-images.githubusercontent.com/55059833/103178415-a489a600-4850-11eb-85fa-505aec071efa.PNG">
 
-An example of an evaluation of AAPL stock.
+An example of an evaluation of AAPL stock:
 
 <img width="376" alt="bluechip2" src="https://user-images.githubusercontent.com/55059833/103178435-c2570b00-4850-11eb-8b97-e7ca7cb56132.PNG">
 
